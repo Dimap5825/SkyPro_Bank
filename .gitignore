@@ -1,0 +1,58 @@
+### Python ###
+# Виртуальные окружения
+venv/
+.venv/
+env/
+ENV/
+
+# Кэш и скомпилированные файлы Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+
+# Файлы зависимостей и сборки
+pip-wheel-metadata/
+build/
+dist/
+*.egg-info/
+*.egg
+*.manifest
+*.spec
+
+# Установленные пакеты (если используется `pip install --user`)
+*.local
+
+# Тестовые и отладочные файлы
+.coverage
+htmlcov/
+.pytest_cache/
+*.mo
+*.pot
+
+### PyCharm & JetBrains ###
+.idea/
+*.iml
+*.ipr
+*.iws
+.idea_modules/
+
+# Папки с настройками PyCharm
+.idea/workspace.xml
+.idea/tasks.xml
+.idea/dictionaries/
+.idea/shelf/
+.idea/dataSources/
+.idea/dataSources.ids
+.idea/sqlDataSources.xml
+
+# Файлы кэша PyCharm
+.idea/caches/
+.idea/.name
+
+### macOS ###
+.DS_Store
+
+### Windows ###
+Thumbs.db
