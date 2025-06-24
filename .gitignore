@@ -56,3 +56,4 @@ htmlcov/
 
 ### Windows ###
 Thumbs.db
+poetry.toml  # Не коммитим
