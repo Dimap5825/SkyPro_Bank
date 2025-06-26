@@ -32,7 +32,6 @@ htmlcov/
 *.pot
 
 ### PyCharm & JetBrains ###
-.idea/
 *.iml
 *.ipr
 *.iws
