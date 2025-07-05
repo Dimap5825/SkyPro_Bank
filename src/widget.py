@@ -1,5 +1,7 @@
-from lib.masks import get_mask_account,get_mask_card_number
 from typing import Union
+
+from lib.masks import get_mask_account, get_mask_card_number
+
 
 def mask_account_card (card_or_account_number: Union[int, str]) -> str:
     """ умеет обрабатывать информацию как о картах, так и о счетах."""
@@ -36,7 +38,7 @@ def get_date (data_incomprehensible_format: str) -> str:
 "ДД.ММ.ГГГГ" """
     try:
         data_incomprehensible_format = data_incomprehensible_format.split("T")[0]
-        year,month,day = data_incomprehensible_format.split("-")
+        year, month, day = data_incomprehensible_format.split("-")
         return f"{day}.{month}.{year}"
     except (IndexError, ValueError):
         return "Ошибка: неверный формат даты"
