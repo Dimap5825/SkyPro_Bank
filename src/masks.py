@@ -2,28 +2,14 @@ def get_mask_card_number(card_number: str) -> str:
     """Функцию маскировки номера банковской карты"""
     # 7000792289606361 входной аргумент
     card_number = str(card_number).replace(" ", "")
-    if len(card_number) != 16 or not card_number.isdigit():
-        return "Введите номер карты, должно быть 16 символов"
-
-    else:
-        return f"{card_number[:4]} {card_number[4:6]}** **** {card_number[-4:]}"  # 7000 79** **** 6361 выход
+    if not (len(card_number)) == 16 and card_number.isdigit():
+        raise ValueError("Введите номер карты, должно быть 16 символов")
+    return f"{card_number[:4]} {card_number[4:6]}** **** {card_number[-4:]}"  # 7000 79** **** 6361 выход
 
 
 def get_mask_account(account_number: str) -> str:
     """Функцию маскировки номера банковского счета"""
-    account_number = str(account_number).replace(" ", "")  # 73654108430135874305
-    if not account_number.isdigit():
-        return "Введите номер счёта, он включает в себя только цифры"
+    if not (len(account_number) == 20 and account_number.isdigit()):
+        raise ValueError("Введите номер счёта, он включает в себя только цифры")
 
-    return f"**{account_number[-4:]}"  # ** 4305
-def get_date(iso_datetime: str) -> str:
-    """
-    Принимает на вход строку с датой со временем в формате iso
-    и возвращает в формате "ДД.ММ.ГГГГ".
-    """
-    try:
-        iso_date, _ = iso_datetime.split("T")
-        year, month, day = iso_date.split("-")
-        return f"{day}.{month}.{year}"
-    except (IndexError, ValueError):
-        raise ValueError("Неверный формат даты")
+    return f"**{account_number[-4:]}"
