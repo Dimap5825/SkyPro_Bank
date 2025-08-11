@@ -2,12 +2,12 @@ from src.masks import get_mask_account, get_mask_card_number
 
 
 def mask_account_card(account_card: str) -> str:
-    name, number = account_card.rsplit(' ', maxsplit=1)
-    if name == 'счет':
+    name, number = account_card.rsplit(" ", maxsplit=1)
+    if name == "счет":
         masked_number = get_mask_account(number)
     else:
         masked_number = get_mask_card_number(number)
-    return f'{name} {masked_number}'
+    return f"{name} {masked_number}"
 
 
 def get_date(iso_datetime: str) -> str:
