@@ -1,10 +1,12 @@
 def get_mask_card_number(card_number: str) -> str:
     """Функцию маскировки номера банковской карты"""
     # 7000792289606361 входной аргумент
-    card_number = str(card_number).replace(" ", "")
-    if not (len(card_number)) == 16 and card_number.isdigit():
+    # 7000 79** **** 6361 выход
+    card_number_str = str(card_number).replace(" ", "")
+
+    if  (len(card_number_str)) != 16 or not card_number_str.isdigit():
         raise ValueError("Введите номер карты, должно быть 16 символов")
-    return f"{card_number[:4]} {card_number[4:6]}** **** {card_number[-4:]}"  # 7000 79** **** 6361 выход
+    return f"{card_number_str[:4]} {card_number_str[4:6]}** **** {card_number_str[-4:]}"  # 7000 79** **** 6361 выход
 
 
 def get_mask_account(account_number: str) -> str:
