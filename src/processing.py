@@ -10,12 +10,8 @@ def filter_by_state(transactions: list[dict], state: str = "EXECUTED") -> list[d
     :return: Отфильтрованный список словарей.
     """
     return [
-        transaction
-        for transaction in transactions
-        if transaction.get("state") == state
+        transaction for transaction in transactions if transaction.get("state") == state
     ]
-
-
 
 
 def sort_by_date(transactions: list[dict], reverse: bool = True) -> list[dict]:

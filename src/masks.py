@@ -4,7 +4,7 @@ def get_mask_card_number(card_number: str) -> str:
     # 7000 79** **** 6361 выход
     card_number_str = str(card_number).replace(" ", "")
 
-    if  (len(card_number_str)) != 16 or not card_number_str.isdigit():
+    if (len(card_number_str)) != 16 or not card_number_str.isdigit():
         raise ValueError("Введите номер карты, должно быть 16 символов")
     return f"{card_number_str[:4]} {card_number_str[4:6]}** **** {card_number_str[-4:]}"  # 7000 79** **** 6361 выход
 

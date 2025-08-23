@@ -7,24 +7,21 @@ def mask_account_card(account_card: str) -> str:
     """
     space_index = -1
 
-    for index,symb in enumerate(account_card):
+    for index, symb in enumerate(account_card):
         if symb.isdigit():
             space_index += index
             break
 
     if space_index == -1:
         raise ValueError("Не найден номер в строке")
-    acc_name= account_card[:space_index].strip() # имя это всё до индекса выше
-                                      # "Visa Classic 1234 5678 9012 3456"[:4] → "Visa"
-    number = account_card[space_index:].replace(" ","")
+    acc_name = account_card[:space_index].strip()  # имя это всё до индекса выше
+    # "Visa Classic 1234 5678 9012 3456"[:4] → "Visa"
+    number = account_card[space_index:].replace(" ", "")
 
-    if acc_name.lower() not in ["счет","счёт"]: # если карта
+    if acc_name.lower() not in ["счет", "счёт"]:  # если карта
         return f"{acc_name} {get_mask_card_number(number)}"
-    else: # если счёт
+    else:  # если счёт
         return f"{acc_name} {get_mask_account(number)}"
-
-
-from datetime import datetime
 
 
 def get_date(iso_datetime: str) -> str:
