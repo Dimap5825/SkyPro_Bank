@@ -185,11 +185,11 @@ def sample_transactions():
             "date": "2023-01-01T12:00:00.000000",
             "operationAmount": {
                 "amount": "100.00",
-                "currency": {"name": "USD", "code": "USD"}
+                "currency": {"name": "USD", "code": "USD"},
             },
             "description": "Перевод организации",
             "from": "Счет 12345678901234567890",
-            "to": "Счет 09876543210987654321"
+            "to": "Счет 09876543210987654321",
         },
         {
             "id": 2,
@@ -197,11 +197,11 @@ def sample_transactions():
             "date": "2023-01-02T12:00:00.000000",
             "operationAmount": {
                 "amount": "200.00",
-                "currency": {"name": "EUR", "code": "EUR"}
+                "currency": {"name": "EUR", "code": "EUR"},
             },
             "description": "Перевод со счета на счет",
             "from": "Счет 11111111111111111111",
-            "to": "Счет 22222222222222222222"
+            "to": "Счет 22222222222222222222",
         },
         {
             "id": 3,
@@ -209,11 +209,11 @@ def sample_transactions():
             "date": "2023-01-03T12:00:00.000000",
             "operationAmount": {
                 "amount": "300.00",
-                "currency": {"name": "USD", "code": "USD"}
+                "currency": {"name": "USD", "code": "USD"},
             },
             "description": "Оплата услуг",
             "from": "Счет 33333333333333333333",
-            "to": "Счет 44444444444444444444"
+            "to": "Счет 44444444444444444444",
         },
         {
             "id": 4,
@@ -221,19 +221,13 @@ def sample_transactions():
             "date": "2023-01-04T12:00:00.000000",
             "operationAmount": {
                 "amount": "400.00",
-                "currency": {"name": "RUB", "code": "RUB"}
+                "currency": {"name": "RUB", "code": "RUB"},
             },
             "description": "Пополнение счета",
             "from": "Счет 55555555555555555555",
-            "to": "Счет 66666666666666666666"
-        }
+            "to": "Счет 66666666666666666666",
+        },
     ]
-
-
-@pytest.fixture
-def empty_transactions():
-    """Фикстура с пустым списком транзакций"""
-    return []
 
 
 @pytest.fixture
@@ -246,7 +240,7 @@ def transactions_without_currency():
             "date": "2023-01-01T12:00:00.000000",
             "description": "Тестовая операция без валюты",
             "from": "Счет 12345678901234567890",
-            "to": "Счет 09876543210987654321"
+            "to": "Счет 09876543210987654321",
         }
     ]
 
@@ -261,10 +255,10 @@ def single_transaction():
             "date": "2023-01-01T12:00:00.000000",
             "operationAmount": {
                 "amount": "100.00",
-                "currency": {"name": "USD", "code": "USD"}
+                "currency": {"name": "USD", "code": "USD"},
             },
             "description": "Одиночный перевод",
             "from": "Счет 12345678901234567890",
-            "to": "Счет 09876543210987654321"
+            "to": "Счет 09876543210987654321",
         }
     ]

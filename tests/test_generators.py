@@ -1,5 +1,9 @@
 import pytest
-from generators import filter_by_currency, transaction_descriptions,card_number_generator
+from src.generators import (
+    filter_by_currency,
+    transaction_descriptions,
+    card_number_generator,
+)
 
 
 class TestFilterByCurrency:
@@ -38,16 +42,23 @@ class TestFilterByCurrency:
     def test_transactions_without_currency(self, transactions_without_currency):
         """Тест с транзакциями без информации о валюте"""
         # Должен корректно обработать без ошибок
-        usd_transactions = list(filter_by_currency(transactions_without_currency, "USD"))
+        usd_transactions = list(
+            filter_by_currency(transactions_without_currency, "USD")
+        )
         assert len(usd_transactions) == 0
 
-    @pytest.mark.parametrize("currency,expected_count,expected_ids", [
-        ("USD", 2, [1, 3]),
-        ("EUR", 1, [2]),
-        ("RUB", 1, [4]),
-        ("GBP", 0, []),
-    ])
-    def test_parametrized_currency_filter(self, sample_transactions, currency, expected_count, expected_ids):
+    @pytest.mark.parametrize(
+        "currency,expected_count,expected_ids",
+        [
+            ("USD", 2, [1, 3]),
+            ("EUR", 1, [2]),
+            ("RUB", 1, [4]),
+            ("GBP", 0, []),
+        ],
+    )
+    def test_parametrized_currency_filter(
+        self, sample_transactions, currency, expected_count, expected_ids
+    ):
         """Параметризованный тест для разных валют"""
         filtered = list(filter_by_currency(sample_transactions, currency))
 
@@ -55,7 +66,6 @@ class TestFilterByCurrency:
         for transaction in filtered:
             assert transaction["id"] in expected_ids
             assert transaction["operationAmount"]["currency"]["name"] == currency
-
 
 
 class TestTransactionDescriptions:
@@ -69,7 +79,7 @@ class TestTransactionDescriptions:
             "Перевод организации",
             "Перевод со счета на счет",
             "Оплата услуг",
-            "Пополнение счета"
+            "Пополнение счета",
         ]
 
         assert descriptions == expected_descriptions
@@ -90,17 +100,18 @@ class TestTransactionDescriptions:
         assert descriptions == ["Тестовая операция без валюты"]
 
 
-
-
 class TestCardNumberGenerator:
     """Тесты для генератора номеров карт"""
 
-    @pytest.mark.parametrize("start,end,expected_count", [
-        (1, 5, 5),
-        (9999999999999995, 9999999999999999, 5),
-        (1, 1, 1),
-        (10, 15, 6),
-    ])
+    @pytest.mark.parametrize(
+        "start,end,expected_count",
+        [
+            (1, 5, 5),
+            (9999999999999995, 9999999999999999, 5),
+            (1, 1, 1),
+            (10, 15, 6),
+        ],
+    )
     def test_generator_range(self, start, end, expected_count):
         """Тест генерации в разных диапазонах"""
         cards = list(card_number_generator(start, end))
@@ -113,14 +124,16 @@ class TestCardNumberGenerator:
         expected_cards = [
             "0000 0000 0000 0001",
             "0000 0000 0000 0002",
-            "0000 0000 0000 0003"
+            "0000 0000 0000 0003",
         ]
 
         assert cards == expected_cards
 
     def test_invalid_range(self):
         """Тест обработки неверного диапазона"""
-        with pytest.raises(ValueError, match="Диапазон должен быть от 1 до 9999999999999999"):
+        with pytest.raises(
+            ValueError, match="Диапазон должен быть от 1 до 9999999999999999"
+        ):
             list(card_number_generator(0, 5))
 
         with pytest.raises(ValueError):
@@ -146,7 +159,7 @@ class TestCardNumberGenerator:
         expected_cards = [
             "1234 5678 9012 3456",
             "1234 5678 9012 3457",
-            "1234 5678 9012 3458"
+            "1234 5678 9012 3458",
         ]
 
         assert cards == expected_cards
