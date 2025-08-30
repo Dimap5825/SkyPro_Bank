@@ -58,3 +58,6 @@ Thumbs.db
 poetry.toml  # Не коммитим
 poetry.toml
 .idea
+#Отчёты по тестам
+coverage_report/
+.coverage
