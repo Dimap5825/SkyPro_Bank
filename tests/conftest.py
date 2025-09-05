@@ -1,5 +1,5 @@
 import pytest
-
+from src.decorators import log
 # ФИКСТУРЫ ДЛЯ test_get_mask_card_number(src/masks.py)
 
 
@@ -262,3 +262,52 @@ def single_transaction():
             "to": "Счет 09876543210987654321",
         }
     ]
+
+
+# Фикстуры для проверки decorators.py
+
+
+@pytest.fixture
+def test_func_with_file(tmp_path):
+    """Фикстура для функции с записью в файл"""
+    test_file = tmp_path / "test_log.txt"
+
+    @log(filename=str(test_file))
+    def add_numbers(a, b):
+        return a + b
+
+    return add_numbers, test_file
+
+
+@pytest.fixture
+def test_func_without_file():
+    """Фикстура для функции с выводом в консоль"""
+
+    @log()
+    def add_numbers(a, b):
+        return a + b
+
+    return add_numbers
+
+
+@pytest.fixture
+def error_func_with_file(tmp_path):
+    """Фикстура для функции с ошибкой (файл)"""
+    test_file = tmp_path / "error_log.txt"
+
+    @log(filename=str(test_file))
+    def divide(a, b):
+        return a / b  # Будет ошибка при b=0
+
+    return divide, test_file
+
+
+@pytest.fixture
+def error_func_without_file():
+    """Фикстура для функции с ошибкой (консоль)"""
+
+    @log()
+    def divide(a, b):
+        return a / b
+
+    return divide
