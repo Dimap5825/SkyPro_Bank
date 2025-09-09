@@ -60,4 +60,7 @@ poetry.toml
 .idea
 #Отчёты по тестам
 coverage_report/
-.coverage
+.coverage.env
+# Файлы окружения
+.env
+.env.*

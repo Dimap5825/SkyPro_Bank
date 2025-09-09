@@ -10,7 +10,7 @@ def test_success_with_file(test_func_with_file):
     assert result == 5
     assert os.path.exists(test_file)
 
-    with open(test_file, 'r', encoding='utf-8') as f:
+    with open(test_file, "r", encoding="utf-8") as f:
         content = f.read()
     assert "add_numbers ok" in content
 
@@ -34,7 +34,7 @@ def test_error_with_file(error_func_with_file):
         divide_func(10, 0)
 
     assert os.path.exists(test_file)
-    with open(test_file, 'r', encoding='utf-8') as f:
+    with open(test_file, "r", encoding="utf-8") as f:
         content = f.read()
     assert "divide error: ZeroDivisionError" in content
     assert "Inputs: (10, 0)" in content
