@@ -1,6 +1,9 @@
 import pytest
 from src.decorators import log
-# ФИКСТУРЫ ДЛЯ test_get_mask_card_number(src/masks.py)
+from unittest.mock import Mock
+from pathlib import Path
+from unittest.mock import patch
+import os
 
 
 @pytest.fixture(
@@ -311,3 +314,73 @@ def error_func_without_file():
         return a / b
 
     return divide
+
+
+# Для test_utils.py
+@pytest.fixture
+def operations_data():
+    """Фикстура с реальными данными из operations.json"""
+    data_path = Path(__file__).parent.parent / "data" / "operations.json"
+
+    if not data_path.exists():
+        raise pytest.skip("Файл operations.json не найден")
+
+    import json
+
+    with open(data_path, "r", encoding="utf-8") as f:
+        return json.load(f)
+
+
+@pytest.fixture
+def sample_transaction_rub():
+    """Фикстура с транзакцией в RUB"""
+    return {"operationAmount": {"amount": "1000.0", "currency": {"code": "RUB"}}}
+
+
+@pytest.fixture
+def sample_transaction_usd():
+    """Фикстура с транзакцией в USD"""
+    return {"operationAmount": {"amount": "100.0", "currency": {"code": "USD"}}}
+
+
+@pytest.fixture
+def sample_transaction_eur():
+    """Фикстура с транзакцией в EUR"""
+    return {"operationAmount": {"amount": "50.0", "currency": {"code": "EUR"}}}
+
+
+@pytest.fixture
+def sample_transaction_unknown():
+    """Фикстура с неизвестной валютой"""
+    return {"operationAmount": {"amount": "200.0", "currency": {"code": "GBP"}}}
+
+
+@pytest.fixture
+def mock_api_response_success():
+    """Фикстура с успешным ответом API"""
+
+    def _mock_response(converted_amount):
+        mock_response = Mock()
+        mock_response.json.return_value = {"success": True, "result": converted_amount}
+        return mock_response
+
+    return _mock_response
+
+
+@pytest.fixture
+def mock_api_response_error():
+    """Фикстура с ошибкой API"""
+
+    def _mock_response():
+        mock_response = Mock()
+        mock_response.json.side_effect = Exception("API error")
+        return mock_response
+
+    return _mock_response
+
+
+@pytest.fixture(autouse=True)
+def mock_env_vars():
+    """Мок для переменных окружения во всех тестах"""
+    with patch.dict(os.environ, {"api_key": "test_api_key_123"}):
+        yield
