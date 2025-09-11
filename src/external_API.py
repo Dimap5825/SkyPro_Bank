@@ -4,7 +4,7 @@ from src.decorators import apikey_load
 
 
 @apikey_load
-def transaction_sum_rub(transaction, api_key=None) -> float | str:
+def transaction_sum_rub(transaction, api_key=None) -> float:
     """
     Возвращает сумму транзакции в рублях.
 
@@ -60,4 +60,4 @@ def transaction_sum_rub(transaction, api_key=None) -> float | str:
             raise Exception(f"Ошибка {e}")
     # Валюта не указана
     else:
-        return "Валюта не указана"
+        return float(0)
