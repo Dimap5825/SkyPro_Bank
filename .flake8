@@ -8,5 +8,5 @@ exclude =
     env,
     .venv,
     .env
-max-line-length = 128
+max-line-length = 151
 ignore = E203, E266, W503
