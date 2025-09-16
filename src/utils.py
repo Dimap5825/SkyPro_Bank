@@ -1,5 +1,15 @@
 import json
+import logging
 
+logger = logging.getLogger(__name__)
+# Настраиваем хендлер только если его еще нет
+if not logger.handlers:
+    formatter = logging.Formatter('%(asctime)s - %(name)s - %(levelname)s: %(message)s')
+    file_handler = logging.FileHandler('logs/utils.log')
+    file_handler.setFormatter(formatter)
+    file_handler.setLevel(logging.INFO)
+    logger.addHandler(file_handler)
+    logger.setLevel(logging.INFO)
 
 def get_list_financial_transactions(jsonfile_name: str) -> list:
     """
@@ -25,17 +35,21 @@ def get_list_financial_transactions(jsonfile_name: str) -> list:
     # Ошибка прав доступа
     get_list_financial_transactions("/root/file.json") → [] + print ошибки
     """
+    logger.info("Пробуем открыть файл .json и преобразовать в лист словарей ")
     try:
-        with open(jsonfile_name, "r", encoding="utf-8") as f:
-            data = json.load(f)
-            if isinstance(data, list):
+        with open(jsonfile_name, "r", encoding="utf-8") as f: #.json
+            data = json.load(f)        #list( список словарей Python)
+            if isinstance(data, list):  # проверка, что data список
                 return data
             else:
                 return []
-    except FileNotFoundError:
+    except FileNotFoundError as e:
+        logger.error(f"{e}")
         return []
-    except json.JSONDecodeError:
+    except json.JSONDecodeError as e:
+        logger.error(f"{e}")
+
         return []
     except Exception as e:
-        print(f"Произошла ошибка {e}")
+        logger.error(f"{e}")
         return []
