@@ -1,9 +1,13 @@
 import json
 import logging
+import os
 
 logger = logging.getLogger(__name__)
 # Настраиваем хендлер только если его еще нет
 if not logger.handlers:
+    log_dir = 'logs'
+    if not os.path.exists(log_dir):
+        os.makedirs(log_dir)
     formatter = logging.Formatter('%(asctime)s - %(name)s - %(levelname)s: %(message)s')
     file_handler = logging.FileHandler('logs/utils.log')
     file_handler.setFormatter(formatter)
