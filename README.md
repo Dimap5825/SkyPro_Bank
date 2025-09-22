@@ -102,7 +102,7 @@ print(masked_account)  # Счет **4305
 
 # Форматирование даты
 formatted_date = get_date("2023-07-15T14:30:00.000000")
-print(formatted_date)  # 15.07.2023
+aprint(formatted_date)  # 15.07.2023
 ```
 
 ### Обработка транзакций (processing.py)
