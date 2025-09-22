@@ -1,6 +1,4 @@
-from functools import (
-    wraps,
-)  # Этот модуль будет использоваться для размещения декораторов, включая декоратор log
+from functools import wraps  # Этот модуль будет использоваться для размещения декораторов, включая декоратор log
 import os
 from dotenv import load_dotenv
 
