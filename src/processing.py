@@ -20,10 +20,13 @@ def sort_by_date(transactions: list[dict], reverse: bool = True) -> list[dict]:
     def date_key(item):
         date_str = item["date"]
         try:
-            # Пытаемся преобразовать строку в datetime объект
-            return datetime.strptime(date_str, "%Y-%m-%d")
+            # Парсим ISO формат с временем, берем только дату
+            return datetime.fromisoformat(date_str.replace('Z', '+00:00'))
         except ValueError:
-            # Если не получается - бросаем исключение
-            raise ValueError(f"Неверный формат даты: {date_str}")
+            # Если не получается - пробуем старый формат для обратной совместимости
+            try:
+                return datetime.strptime(date_str, "%Y-%m-%d")
+            except ValueError:
+                raise ValueError(f"Неверный формат даты: {date_str}")
 
     return sorted(transactions, key=date_key, reverse=reverse)

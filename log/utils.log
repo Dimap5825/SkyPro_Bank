@@ -1,0 +1,276 @@
+utils.py - 2025-10-10 15:29:36,656 - develop_fun.log_fun - INFO - Пробуем открыть файл .json и преобразовать в лист словарей  - get_list_financial_transactions
+masks.py - 2025-10-10 15:29:36,660 - develop_fun.log_fun - INFO - Маскировка карты: 7000792289606361 - get_mask_card_number
+masks.py - 2025-10-10 15:29:36,660 - develop_fun.log_fun - INFO - Результат маскировки карты: 7000 79** **** 6361 - get_mask_card_number
+masks.py - 2025-10-10 15:29:36,662 - develop_fun.log_fun - INFO - Маскировка счета: 73654108430135874305 - get_mask_account
+masks.py - 2025-10-10 15:29:36,662 - develop_fun.log_fun - INFO - Результат маскировки счета: **4305 - get_mask_account
+masks.py - 2025-10-10 15:29:36,664 - develop_fun.log_fun - INFO - Маскировка счета: 64686473678894779589 - get_mask_account
+masks.py - 2025-10-10 15:29:36,664 - develop_fun.log_fun - INFO - Результат маскировки счета: **9589 - get_mask_account
+masks.py - 2025-10-10 15:29:36,666 - develop_fun.log_fun - INFO - Маскировка карты: 7158300734726758 - get_mask_card_number
+masks.py - 2025-10-10 15:29:36,666 - develop_fun.log_fun - INFO - Результат маскировки карты: 7158 30** **** 6758 - get_mask_card_number
+masks.py - 2025-10-10 15:29:36,667 - develop_fun.log_fun - INFO - Маскировка карты: 1596837868705199 - get_mask_card_number
+masks.py - 2025-10-10 15:29:36,667 - develop_fun.log_fun - INFO - Результат маскировки карты: 1596 83** **** 5199 - get_mask_card_number
+masks.py - 2025-10-10 15:29:36,670 - develop_fun.log_fun - INFO - Маскировка карты: 1234567812345678 - get_mask_card_number
+masks.py - 2025-10-10 15:29:36,670 - develop_fun.log_fun - INFO - Результат маскировки карты: 1234 56** **** 5678 - get_mask_card_number
+masks.py - 2025-10-10 15:29:36,673 - develop_fun.log_fun - INFO - Маскировка карты: 1234567890123456 - get_mask_card_number
+masks.py - 2025-10-10 15:29:36,673 - develop_fun.log_fun - INFO - Результат маскировки карты: 1234 56** **** 3456 - get_mask_card_number
+masks.py - 2025-10-10 15:29:36,674 - develop_fun.log_fun - INFO - Маскировка счета: 12345678901234567890 - get_mask_account
+masks.py - 2025-10-10 15:29:36,675 - develop_fun.log_fun - INFO - Результат маскировки счета: **7890 - get_mask_account
+masks.py - 2025-10-10 15:29:36,676 - develop_fun.log_fun - INFO - Маскировка карты: 1234567890123456 - get_mask_card_number
+masks.py - 2025-10-10 15:29:36,676 - develop_fun.log_fun - INFO - Результат маскировки карты: 1234 56** **** 3456 - get_mask_card_number
+masks.py - 2025-10-10 15:29:36,678 - develop_fun.log_fun - INFO - Маскировка карты: 123 - get_mask_card_number
+masks.py - 2025-10-10 15:29:36,678 - develop_fun.log_fun - ERROR - Введите номер карты, должно быть 16 цифр - get_mask_card_number
+masks.py - 2025-10-10 15:29:36,680 - develop_fun.log_fun - INFO - Маскировка счета: 1234567890 - get_mask_account
+masks.py - 2025-10-10 15:29:36,680 - develop_fun.log_fun - ERROR - Введите номер счёта, он включает в себя только цифры - get_mask_account
+utils.py - 2025-10-10 15:31:38,054 - develop_fun.log_fun - INFO - Пробуем открыть файл .json и преобразовать в лист словарей  - get_list_financial_transactions
+masks.py - 2025-10-10 15:31:38,057 - develop_fun.log_fun - INFO - Маскировка карты: 7000792289606361 - get_mask_card_number
+masks.py - 2025-10-10 15:31:38,058 - develop_fun.log_fun - INFO - Результат маскировки карты: 7000 79** **** 6361 - get_mask_card_number
+masks.py - 2025-10-10 15:31:38,060 - develop_fun.log_fun - INFO - Маскировка счета: 73654108430135874305 - get_mask_account
+masks.py - 2025-10-10 15:31:38,060 - develop_fun.log_fun - INFO - Результат маскировки счета: **4305 - get_mask_account
+masks.py - 2025-10-10 15:31:38,062 - develop_fun.log_fun - INFO - Маскировка счета: 64686473678894779589 - get_mask_account
+masks.py - 2025-10-10 15:31:38,062 - develop_fun.log_fun - INFO - Результат маскировки счета: **9589 - get_mask_account
+masks.py - 2025-10-10 15:31:38,064 - develop_fun.log_fun - INFO - Маскировка карты: 7158300734726758 - get_mask_card_number
+masks.py - 2025-10-10 15:31:38,064 - develop_fun.log_fun - INFO - Результат маскировки карты: 7158 30** **** 6758 - get_mask_card_number
+masks.py - 2025-10-10 15:31:38,065 - develop_fun.log_fun - INFO - Маскировка карты: 1596837868705199 - get_mask_card_number
+masks.py - 2025-10-10 15:31:38,066 - develop_fun.log_fun - INFO - Результат маскировки карты: 1596 83** **** 5199 - get_mask_card_number
+masks.py - 2025-10-10 15:31:38,067 - develop_fun.log_fun - INFO - Маскировка карты: 1234567812345678 - get_mask_card_number
+masks.py - 2025-10-10 15:31:38,067 - develop_fun.log_fun - INFO - Результат маскировки карты: 1234 56** **** 5678 - get_mask_card_number
+masks.py - 2025-10-10 15:31:38,069 - develop_fun.log_fun - INFO - Маскировка карты: 1234567890123456 - get_mask_card_number
+masks.py - 2025-10-10 15:31:38,070 - develop_fun.log_fun - INFO - Результат маскировки карты: 1234 56** **** 3456 - get_mask_card_number
+masks.py - 2025-10-10 15:31:38,071 - develop_fun.log_fun - INFO - Маскировка счета: 12345678901234567890 - get_mask_account
+masks.py - 2025-10-10 15:31:38,072 - develop_fun.log_fun - INFO - Результат маскировки счета: **7890 - get_mask_account
+masks.py - 2025-10-10 15:31:38,073 - develop_fun.log_fun - INFO - Маскировка карты: 1234567890123456 - get_mask_card_number
+masks.py - 2025-10-10 15:31:38,073 - develop_fun.log_fun - INFO - Результат маскировки карты: 1234 56** **** 3456 - get_mask_card_number
+masks.py - 2025-10-10 15:31:38,075 - develop_fun.log_fun - INFO - Маскировка карты: 123 - get_mask_card_number
+masks.py - 2025-10-10 15:31:38,075 - develop_fun.log_fun - ERROR - Введите номер карты, должно быть 16 цифр - get_mask_card_number
+masks.py - 2025-10-10 15:31:38,077 - develop_fun.log_fun - INFO - Маскировка счета: 1234567890 - get_mask_account
+masks.py - 2025-10-10 15:31:38,077 - develop_fun.log_fun - ERROR - Введите номер счёта, он включает в себя только цифры - get_mask_account
+utils.py - 2025-10-10 15:34:05,119 - develop_fun.log_fun - INFO - Пробуем открыть файл .json и преобразовать в лист словарей  - get_list_financial_transactions
+masks.py - 2025-10-10 15:34:05,122 - develop_fun.log_fun - INFO - Маскировка карты: 7000792289606361 - get_mask_card_number
+masks.py - 2025-10-10 15:34:05,122 - develop_fun.log_fun - INFO - Результат маскировки карты: 7000 79** **** 6361 - get_mask_card_number
+masks.py - 2025-10-10 15:34:05,124 - develop_fun.log_fun - INFO - Маскировка счета: 73654108430135874305 - get_mask_account
+masks.py - 2025-10-10 15:34:05,125 - develop_fun.log_fun - INFO - Результат маскировки счета: **4305 - get_mask_account
+masks.py - 2025-10-10 15:34:05,127 - develop_fun.log_fun - INFO - Маскировка счета: 64686473678894779589 - get_mask_account
+masks.py - 2025-10-10 15:34:05,127 - develop_fun.log_fun - INFO - Результат маскировки счета: **9589 - get_mask_account
+masks.py - 2025-10-10 15:34:05,129 - develop_fun.log_fun - INFO - Маскировка карты: 7158300734726758 - get_mask_card_number
+masks.py - 2025-10-10 15:34:05,129 - develop_fun.log_fun - INFO - Результат маскировки карты: 7158 30** **** 6758 - get_mask_card_number
+masks.py - 2025-10-10 15:34:05,131 - develop_fun.log_fun - INFO - Маскировка карты: 1596837868705199 - get_mask_card_number
+masks.py - 2025-10-10 15:34:05,131 - develop_fun.log_fun - INFO - Результат маскировки карты: 1596 83** **** 5199 - get_mask_card_number
+masks.py - 2025-10-10 15:34:05,133 - develop_fun.log_fun - INFO - Маскировка карты: 1234567812345678 - get_mask_card_number
+masks.py - 2025-10-10 15:34:05,133 - develop_fun.log_fun - INFO - Результат маскировки карты: 1234 56** **** 5678 - get_mask_card_number
+masks.py - 2025-10-10 15:34:05,135 - develop_fun.log_fun - INFO - Маскировка карты: 1234567890123456 - get_mask_card_number
+masks.py - 2025-10-10 15:34:05,135 - develop_fun.log_fun - INFO - Результат маскировки карты: 1234 56** **** 3456 - get_mask_card_number
+masks.py - 2025-10-10 15:34:05,137 - develop_fun.log_fun - INFO - Маскировка счета: 12345678901234567890 - get_mask_account
+masks.py - 2025-10-10 15:34:05,137 - develop_fun.log_fun - INFO - Результат маскировки счета: **7890 - get_mask_account
+masks.py - 2025-10-10 15:34:05,139 - develop_fun.log_fun - INFO - Маскировка карты: 1234567890123456 - get_mask_card_number
+masks.py - 2025-10-10 15:34:05,139 - develop_fun.log_fun - INFO - Результат маскировки карты: 1234 56** **** 3456 - get_mask_card_number
+masks.py - 2025-10-10 15:34:05,141 - develop_fun.log_fun - INFO - Маскировка карты: 123 - get_mask_card_number
+masks.py - 2025-10-10 15:34:05,141 - develop_fun.log_fun - ERROR - Введите номер карты, должно быть 16 цифр - get_mask_card_number
+masks.py - 2025-10-10 15:34:05,143 - develop_fun.log_fun - INFO - Маскировка счета: 1234567890 - get_mask_account
+masks.py - 2025-10-10 15:34:05,143 - develop_fun.log_fun - ERROR - Введите номер счёта, он включает в себя только цифры - get_mask_account
+utils.py - 2025-10-10 15:34:22,550 - develop_fun.log_fun - INFO - Пробуем открыть файл .json и преобразовать в лист словарей  - get_list_financial_transactions
+masks.py - 2025-10-10 15:34:22,553 - develop_fun.log_fun - INFO - Маскировка карты: 7000792289606361 - get_mask_card_number
+masks.py - 2025-10-10 15:34:22,553 - develop_fun.log_fun - INFO - Результат маскировки карты: 7000 79** **** 6361 - get_mask_card_number
+masks.py - 2025-10-10 15:34:22,555 - develop_fun.log_fun - INFO - Маскировка счета: 73654108430135874305 - get_mask_account
+masks.py - 2025-10-10 15:34:22,555 - develop_fun.log_fun - INFO - Результат маскировки счета: **4305 - get_mask_account
+masks.py - 2025-10-10 15:34:22,557 - develop_fun.log_fun - INFO - Маскировка счета: 64686473678894779589 - get_mask_account
+masks.py - 2025-10-10 15:34:22,557 - develop_fun.log_fun - INFO - Результат маскировки счета: **9589 - get_mask_account
+masks.py - 2025-10-10 15:34:22,559 - develop_fun.log_fun - INFO - Маскировка карты: 7158300734726758 - get_mask_card_number
+masks.py - 2025-10-10 15:34:22,559 - develop_fun.log_fun - INFO - Результат маскировки карты: 7158 30** **** 6758 - get_mask_card_number
+masks.py - 2025-10-10 15:34:22,561 - develop_fun.log_fun - INFO - Маскировка карты: 1596837868705199 - get_mask_card_number
+masks.py - 2025-10-10 15:34:22,561 - develop_fun.log_fun - INFO - Результат маскировки карты: 1596 83** **** 5199 - get_mask_card_number
+masks.py - 2025-10-10 15:34:22,563 - develop_fun.log_fun - INFO - Маскировка карты: 1234567812345678 - get_mask_card_number
+masks.py - 2025-10-10 15:34:22,563 - develop_fun.log_fun - INFO - Результат маскировки карты: 1234 56** **** 5678 - get_mask_card_number
+masks.py - 2025-10-10 15:34:22,565 - develop_fun.log_fun - INFO - Маскировка карты: 1234567890123456 - get_mask_card_number
+masks.py - 2025-10-10 15:34:22,565 - develop_fun.log_fun - INFO - Результат маскировки карты: 1234 56** **** 3456 - get_mask_card_number
+masks.py - 2025-10-10 15:34:22,567 - develop_fun.log_fun - INFO - Маскировка счета: 12345678901234567890 - get_mask_account
+masks.py - 2025-10-10 15:34:22,567 - develop_fun.log_fun - INFO - Результат маскировки счета: **7890 - get_mask_account
+masks.py - 2025-10-10 15:34:22,569 - develop_fun.log_fun - INFO - Маскировка карты: 1234567890123456 - get_mask_card_number
+masks.py - 2025-10-10 15:34:22,569 - develop_fun.log_fun - INFO - Результат маскировки карты: 1234 56** **** 3456 - get_mask_card_number
+masks.py - 2025-10-10 15:34:22,571 - develop_fun.log_fun - INFO - Маскировка карты: 123 - get_mask_card_number
+masks.py - 2025-10-10 15:34:22,571 - develop_fun.log_fun - ERROR - Введите номер карты, должно быть 16 цифр - get_mask_card_number
+masks.py - 2025-10-10 15:34:22,573 - develop_fun.log_fun - INFO - Маскировка счета: 1234567890 - get_mask_account
+masks.py - 2025-10-10 15:34:22,573 - develop_fun.log_fun - ERROR - Введите номер счёта, он включает в себя только цифры - get_mask_account
+utils.py - 2025-10-10 15:36:52,749 - develop_fun.log_fun - INFO - Пробуем открыть файл .json и преобразовать в лист словарей  - get_list_financial_transactions
+masks.py - 2025-10-10 15:36:52,752 - develop_fun.log_fun - INFO - Маскировка карты: 7000792289606361 - get_mask_card_number
+masks.py - 2025-10-10 15:36:52,753 - develop_fun.log_fun - INFO - Результат маскировки карты: 7000 79** **** 6361 - get_mask_card_number
+masks.py - 2025-10-10 15:36:52,754 - develop_fun.log_fun - INFO - Маскировка счета: 73654108430135874305 - get_mask_account
+masks.py - 2025-10-10 15:36:52,755 - develop_fun.log_fun - INFO - Результат маскировки счета: **4305 - get_mask_account
+masks.py - 2025-10-10 15:36:52,756 - develop_fun.log_fun - INFO - Маскировка счета: 64686473678894779589 - get_mask_account
+masks.py - 2025-10-10 15:36:52,756 - develop_fun.log_fun - INFO - Результат маскировки счета: **9589 - get_mask_account
+masks.py - 2025-10-10 15:36:52,758 - develop_fun.log_fun - INFO - Маскировка карты: 7158300734726758 - get_mask_card_number
+masks.py - 2025-10-10 15:36:52,758 - develop_fun.log_fun - INFO - Результат маскировки карты: 7158 30** **** 6758 - get_mask_card_number
+masks.py - 2025-10-10 15:36:52,760 - develop_fun.log_fun - INFO - Маскировка карты: 1596837868705199 - get_mask_card_number
+masks.py - 2025-10-10 15:36:52,760 - develop_fun.log_fun - INFO - Результат маскировки карты: 1596 83** **** 5199 - get_mask_card_number
+masks.py - 2025-10-10 15:36:52,762 - develop_fun.log_fun - INFO - Маскировка карты: 1234567812345678 - get_mask_card_number
+masks.py - 2025-10-10 15:36:52,762 - develop_fun.log_fun - INFO - Результат маскировки карты: 1234 56** **** 5678 - get_mask_card_number
+masks.py - 2025-10-10 15:36:52,764 - develop_fun.log_fun - INFO - Маскировка карты: 1234567890123456 - get_mask_card_number
+masks.py - 2025-10-10 15:36:52,764 - develop_fun.log_fun - INFO - Результат маскировки карты: 1234 56** **** 3456 - get_mask_card_number
+masks.py - 2025-10-10 15:36:52,766 - develop_fun.log_fun - INFO - Маскировка счета: 12345678901234567890 - get_mask_account
+masks.py - 2025-10-10 15:36:52,766 - develop_fun.log_fun - INFO - Результат маскировки счета: **7890 - get_mask_account
+masks.py - 2025-10-10 15:36:52,768 - develop_fun.log_fun - INFO - Маскировка карты: 1234567890123456 - get_mask_card_number
+masks.py - 2025-10-10 15:36:52,768 - develop_fun.log_fun - INFO - Результат маскировки карты: 1234 56** **** 3456 - get_mask_card_number
+masks.py - 2025-10-10 15:36:52,770 - develop_fun.log_fun - INFO - Маскировка карты: 123 - get_mask_card_number
+masks.py - 2025-10-10 15:36:52,770 - develop_fun.log_fun - ERROR - Введите номер карты, должно быть 16 цифр - get_mask_card_number
+masks.py - 2025-10-10 15:36:52,772 - develop_fun.log_fun - INFO - Маскировка счета: 1234567890 - get_mask_account
+masks.py - 2025-10-10 15:36:52,772 - develop_fun.log_fun - ERROR - Введите номер счёта, он включает в себя только цифры - get_mask_account
+utils.py - 2025-10-10 15:38:23,007 - develop_fun.log_fun - INFO - Пробуем открыть файл .json и преобразовать в лист словарей  - get_list_financial_transactions
+masks.py - 2025-10-10 15:38:23,009 - develop_fun.log_fun - INFO - Маскировка карты: 7000792289606361 - get_mask_card_number
+masks.py - 2025-10-10 15:38:23,010 - develop_fun.log_fun - INFO - Результат маскировки карты: 7000 79** **** 6361 - get_mask_card_number
+masks.py - 2025-10-10 15:38:23,011 - develop_fun.log_fun - INFO - Маскировка счета: 73654108430135874305 - get_mask_account
+masks.py - 2025-10-10 15:38:23,011 - develop_fun.log_fun - INFO - Результат маскировки счета: **4305 - get_mask_account
+masks.py - 2025-10-10 15:38:23,013 - develop_fun.log_fun - INFO - Маскировка счета: 64686473678894779589 - get_mask_account
+masks.py - 2025-10-10 15:38:23,013 - develop_fun.log_fun - INFO - Результат маскировки счета: **9589 - get_mask_account
+masks.py - 2025-10-10 15:38:23,015 - develop_fun.log_fun - INFO - Маскировка карты: 7158300734726758 - get_mask_card_number
+masks.py - 2025-10-10 15:38:23,016 - develop_fun.log_fun - INFO - Результат маскировки карты: 7158 30** **** 6758 - get_mask_card_number
+masks.py - 2025-10-10 15:38:23,017 - develop_fun.log_fun - INFO - Маскировка карты: 1596837868705199 - get_mask_card_number
+masks.py - 2025-10-10 15:38:23,017 - develop_fun.log_fun - INFO - Результат маскировки карты: 1596 83** **** 5199 - get_mask_card_number
+masks.py - 2025-10-10 15:38:23,019 - develop_fun.log_fun - INFO - Маскировка карты: 1234567812345678 - get_mask_card_number
+masks.py - 2025-10-10 15:38:23,019 - develop_fun.log_fun - INFO - Результат маскировки карты: 1234 56** **** 5678 - get_mask_card_number
+masks.py - 2025-10-10 15:38:23,021 - develop_fun.log_fun - INFO - Маскировка карты: 1234567890123456 - get_mask_card_number
+masks.py - 2025-10-10 15:38:23,021 - develop_fun.log_fun - INFO - Результат маскировки карты: 1234 56** **** 3456 - get_mask_card_number
+masks.py - 2025-10-10 15:38:23,023 - develop_fun.log_fun - INFO - Маскировка счета: 12345678901234567890 - get_mask_account
+masks.py - 2025-10-10 15:38:23,023 - develop_fun.log_fun - INFO - Результат маскировки счета: **7890 - get_mask_account
+masks.py - 2025-10-10 15:38:23,025 - develop_fun.log_fun - INFO - Маскировка карты: 1234567890123456 - get_mask_card_number
+masks.py - 2025-10-10 15:38:23,025 - develop_fun.log_fun - INFO - Результат маскировки карты: 1234 56** **** 3456 - get_mask_card_number
+masks.py - 2025-10-10 15:38:23,027 - develop_fun.log_fun - INFO - Маскировка карты: 123 - get_mask_card_number
+masks.py - 2025-10-10 15:38:23,027 - develop_fun.log_fun - ERROR - Введите номер карты, должно быть 16 цифр - get_mask_card_number
+masks.py - 2025-10-10 15:38:23,028 - develop_fun.log_fun - INFO - Маскировка счета: 1234567890 - get_mask_account
+masks.py - 2025-10-10 15:38:23,029 - develop_fun.log_fun - ERROR - Введите номер счёта, он включает в себя только цифры - get_mask_account
+utils.py - 2025-10-10 15:38:42,327 - develop_fun.log_fun - INFO - Пробуем открыть файл .json и преобразовать в лист словарей  - get_list_financial_transactions
+masks.py - 2025-10-10 15:38:42,330 - develop_fun.log_fun - INFO - Маскировка карты: 7000792289606361 - get_mask_card_number
+masks.py - 2025-10-10 15:38:42,330 - develop_fun.log_fun - INFO - Результат маскировки карты: 7000 79** **** 6361 - get_mask_card_number
+masks.py - 2025-10-10 15:38:42,332 - develop_fun.log_fun - INFO - Маскировка счета: 73654108430135874305 - get_mask_account
+masks.py - 2025-10-10 15:38:42,332 - develop_fun.log_fun - INFO - Результат маскировки счета: **4305 - get_mask_account
+masks.py - 2025-10-10 15:38:42,334 - develop_fun.log_fun - INFO - Маскировка счета: 64686473678894779589 - get_mask_account
+masks.py - 2025-10-10 15:38:42,334 - develop_fun.log_fun - INFO - Результат маскировки счета: **9589 - get_mask_account
+masks.py - 2025-10-10 15:38:42,336 - develop_fun.log_fun - INFO - Маскировка карты: 7158300734726758 - get_mask_card_number
+masks.py - 2025-10-10 15:38:42,336 - develop_fun.log_fun - INFO - Результат маскировки карты: 7158 30** **** 6758 - get_mask_card_number
+masks.py - 2025-10-10 15:38:42,339 - develop_fun.log_fun - INFO - Маскировка карты: 1596837868705199 - get_mask_card_number
+masks.py - 2025-10-10 15:38:42,339 - develop_fun.log_fun - INFO - Результат маскировки карты: 1596 83** **** 5199 - get_mask_card_number
+masks.py - 2025-10-10 15:38:42,341 - develop_fun.log_fun - INFO - Маскировка карты: 1234567812345678 - get_mask_card_number
+masks.py - 2025-10-10 15:38:42,341 - develop_fun.log_fun - INFO - Результат маскировки карты: 1234 56** **** 5678 - get_mask_card_number
+masks.py - 2025-10-10 15:38:42,343 - develop_fun.log_fun - INFO - Маскировка карты: 1234567890123456 - get_mask_card_number
+masks.py - 2025-10-10 15:38:42,343 - develop_fun.log_fun - INFO - Результат маскировки карты: 1234 56** **** 3456 - get_mask_card_number
+masks.py - 2025-10-10 15:38:42,345 - develop_fun.log_fun - INFO - Маскировка счета: 12345678901234567890 - get_mask_account
+masks.py - 2025-10-10 15:38:42,345 - develop_fun.log_fun - INFO - Результат маскировки счета: **7890 - get_mask_account
+masks.py - 2025-10-10 15:38:42,346 - develop_fun.log_fun - INFO - Маскировка карты: 1234567890123456 - get_mask_card_number
+masks.py - 2025-10-10 15:38:42,346 - develop_fun.log_fun - INFO - Результат маскировки карты: 1234 56** **** 3456 - get_mask_card_number
+masks.py - 2025-10-10 15:38:42,348 - develop_fun.log_fun - INFO - Маскировка карты: 123 - get_mask_card_number
+masks.py - 2025-10-10 15:38:42,348 - develop_fun.log_fun - ERROR - Введите номер карты, должно быть 16 цифр - get_mask_card_number
+masks.py - 2025-10-10 15:38:42,350 - develop_fun.log_fun - INFO - Маскировка счета: 1234567890 - get_mask_account
+masks.py - 2025-10-10 15:38:42,350 - develop_fun.log_fun - ERROR - Введите номер счёта, он включает в себя только цифры - get_mask_account
+utils.py - 2025-10-10 15:41:25,227 - develop_fun.log_fun - INFO - Пробуем открыть файл .json и преобразовать в лист словарей  - get_list_financial_transactions
+masks.py - 2025-10-10 15:41:25,233 - develop_fun.log_fun - INFO - Маскировка карты: 7000792289606361 - get_mask_card_number
+masks.py - 2025-10-10 15:41:25,233 - develop_fun.log_fun - INFO - Результат маскировки карты: 7000 79** **** 6361 - get_mask_card_number
+masks.py - 2025-10-10 15:41:25,235 - develop_fun.log_fun - INFO - Маскировка счета: 73654108430135874305 - get_mask_account
+masks.py - 2025-10-10 15:41:25,235 - develop_fun.log_fun - INFO - Результат маскировки счета: **4305 - get_mask_account
+masks.py - 2025-10-10 15:41:25,238 - develop_fun.log_fun - INFO - Маскировка счета: 64686473678894779589 - get_mask_account
+masks.py - 2025-10-10 15:41:25,238 - develop_fun.log_fun - INFO - Результат маскировки счета: **9589 - get_mask_account
+masks.py - 2025-10-10 15:41:25,240 - develop_fun.log_fun - INFO - Маскировка карты: 7158300734726758 - get_mask_card_number
+masks.py - 2025-10-10 15:41:25,240 - develop_fun.log_fun - INFO - Результат маскировки карты: 7158 30** **** 6758 - get_mask_card_number
+masks.py - 2025-10-10 15:41:25,242 - develop_fun.log_fun - INFO - Маскировка карты: 1596837868705199 - get_mask_card_number
+masks.py - 2025-10-10 15:41:25,242 - develop_fun.log_fun - INFO - Результат маскировки карты: 1596 83** **** 5199 - get_mask_card_number
+masks.py - 2025-10-10 15:41:25,244 - develop_fun.log_fun - INFO - Маскировка карты: 1234567812345678 - get_mask_card_number
+masks.py - 2025-10-10 15:41:25,244 - develop_fun.log_fun - INFO - Результат маскировки карты: 1234 56** **** 5678 - get_mask_card_number
+masks.py - 2025-10-10 15:41:25,246 - develop_fun.log_fun - INFO - Маскировка карты: 1234567890123456 - get_mask_card_number
+masks.py - 2025-10-10 15:41:25,246 - develop_fun.log_fun - INFO - Результат маскировки карты: 1234 56** **** 3456 - get_mask_card_number
+masks.py - 2025-10-10 15:41:25,248 - develop_fun.log_fun - INFO - Маскировка счета: 12345678901234567890 - get_mask_account
+masks.py - 2025-10-10 15:41:25,248 - develop_fun.log_fun - INFO - Результат маскировки счета: **7890 - get_mask_account
+masks.py - 2025-10-10 15:41:25,250 - develop_fun.log_fun - INFO - Маскировка карты: 1234567890123456 - get_mask_card_number
+masks.py - 2025-10-10 15:41:25,250 - develop_fun.log_fun - INFO - Результат маскировки карты: 1234 56** **** 3456 - get_mask_card_number
+masks.py - 2025-10-10 15:41:25,252 - develop_fun.log_fun - INFO - Маскировка карты: 123 - get_mask_card_number
+masks.py - 2025-10-10 15:41:25,253 - develop_fun.log_fun - ERROR - Введите номер карты, должно быть 16 цифр - get_mask_card_number
+masks.py - 2025-10-10 15:41:25,255 - develop_fun.log_fun - INFO - Маскировка счета: 1234567890 - get_mask_account
+masks.py - 2025-10-10 15:41:25,255 - develop_fun.log_fun - ERROR - Введите номер счёта, он включает в себя только цифры - get_mask_account
+utils.py - 2025-10-10 15:42:33,323 - develop_fun.log_fun - INFO - Пробуем открыть файл .json и преобразовать в лист словарей  - get_list_financial_transactions
+masks.py - 2025-10-10 15:42:33,326 - develop_fun.log_fun - INFO - Маскировка карты: 7000792289606361 - get_mask_card_number
+masks.py - 2025-10-10 15:42:33,327 - develop_fun.log_fun - INFO - Результат маскировки карты: 7000 79** **** 6361 - get_mask_card_number
+masks.py - 2025-10-10 15:42:33,328 - develop_fun.log_fun - INFO - Маскировка счета: 73654108430135874305 - get_mask_account
+masks.py - 2025-10-10 15:42:33,329 - develop_fun.log_fun - INFO - Результат маскировки счета: **4305 - get_mask_account
+masks.py - 2025-10-10 15:42:33,330 - develop_fun.log_fun - INFO - Маскировка счета: 64686473678894779589 - get_mask_account
+masks.py - 2025-10-10 15:42:33,331 - develop_fun.log_fun - INFO - Результат маскировки счета: **9589 - get_mask_account
+masks.py - 2025-10-10 15:42:33,332 - develop_fun.log_fun - INFO - Маскировка карты: 7158300734726758 - get_mask_card_number
+masks.py - 2025-10-10 15:42:33,333 - develop_fun.log_fun - INFO - Результат маскировки карты: 7158 30** **** 6758 - get_mask_card_number
+masks.py - 2025-10-10 15:42:33,335 - develop_fun.log_fun - INFO - Маскировка карты: 1596837868705199 - get_mask_card_number
+masks.py - 2025-10-10 15:42:33,335 - develop_fun.log_fun - INFO - Результат маскировки карты: 1596 83** **** 5199 - get_mask_card_number
+masks.py - 2025-10-10 15:42:33,337 - develop_fun.log_fun - INFO - Маскировка карты: 1234567812345678 - get_mask_card_number
+masks.py - 2025-10-10 15:42:33,337 - develop_fun.log_fun - INFO - Результат маскировки карты: 1234 56** **** 5678 - get_mask_card_number
+masks.py - 2025-10-10 15:42:33,339 - develop_fun.log_fun - INFO - Маскировка карты: 1234567890123456 - get_mask_card_number
+masks.py - 2025-10-10 15:42:33,339 - develop_fun.log_fun - INFO - Результат маскировки карты: 1234 56** **** 3456 - get_mask_card_number
+masks.py - 2025-10-10 15:42:33,341 - develop_fun.log_fun - INFO - Маскировка счета: 12345678901234567890 - get_mask_account
+masks.py - 2025-10-10 15:42:33,342 - develop_fun.log_fun - INFO - Результат маскировки счета: **7890 - get_mask_account
+masks.py - 2025-10-10 15:42:33,344 - develop_fun.log_fun - INFO - Маскировка карты: 1234567890123456 - get_mask_card_number
+masks.py - 2025-10-10 15:42:33,344 - develop_fun.log_fun - INFO - Результат маскировки карты: 1234 56** **** 3456 - get_mask_card_number
+masks.py - 2025-10-10 15:42:33,346 - develop_fun.log_fun - INFO - Маскировка карты: 123 - get_mask_card_number
+masks.py - 2025-10-10 15:42:33,346 - develop_fun.log_fun - ERROR - Введите номер карты, должно быть 16 цифр - get_mask_card_number
+masks.py - 2025-10-10 15:42:33,348 - develop_fun.log_fun - INFO - Маскировка счета: 1234567890 - get_mask_account
+masks.py - 2025-10-10 15:42:33,348 - develop_fun.log_fun - ERROR - Введите номер счёта, он включает в себя только цифры - get_mask_account
+utils.py - 2025-10-10 15:43:04,874 - develop_fun.log_fun - INFO - Пробуем открыть файл .json и преобразовать в лист словарей  - get_list_financial_transactions
+masks.py - 2025-10-10 15:43:04,877 - develop_fun.log_fun - INFO - Маскировка карты: 7000792289606361 - get_mask_card_number
+masks.py - 2025-10-10 15:43:04,877 - develop_fun.log_fun - INFO - Результат маскировки карты: 7000 79** **** 6361 - get_mask_card_number
+masks.py - 2025-10-10 15:43:04,880 - develop_fun.log_fun - INFO - Маскировка счета: 73654108430135874305 - get_mask_account
+masks.py - 2025-10-10 15:43:04,880 - develop_fun.log_fun - INFO - Результат маскировки счета: **4305 - get_mask_account
+masks.py - 2025-10-10 15:43:04,882 - develop_fun.log_fun - INFO - Маскировка счета: 64686473678894779589 - get_mask_account
+masks.py - 2025-10-10 15:43:04,882 - develop_fun.log_fun - INFO - Результат маскировки счета: **9589 - get_mask_account
+masks.py - 2025-10-10 15:43:04,884 - develop_fun.log_fun - INFO - Маскировка карты: 7158300734726758 - get_mask_card_number
+masks.py - 2025-10-10 15:43:04,884 - develop_fun.log_fun - INFO - Результат маскировки карты: 7158 30** **** 6758 - get_mask_card_number
+masks.py - 2025-10-10 15:43:04,886 - develop_fun.log_fun - INFO - Маскировка карты: 1596837868705199 - get_mask_card_number
+masks.py - 2025-10-10 15:43:04,886 - develop_fun.log_fun - INFO - Результат маскировки карты: 1596 83** **** 5199 - get_mask_card_number
+masks.py - 2025-10-10 15:43:04,888 - develop_fun.log_fun - INFO - Маскировка карты: 1234567812345678 - get_mask_card_number
+masks.py - 2025-10-10 15:43:04,888 - develop_fun.log_fun - INFO - Результат маскировки карты: 1234 56** **** 5678 - get_mask_card_number
+masks.py - 2025-10-10 15:43:04,890 - develop_fun.log_fun - INFO - Маскировка карты: 1234567890123456 - get_mask_card_number
+masks.py - 2025-10-10 15:43:04,891 - develop_fun.log_fun - INFO - Результат маскировки карты: 1234 56** **** 3456 - get_mask_card_number
+masks.py - 2025-10-10 15:43:04,892 - develop_fun.log_fun - INFO - Маскировка счета: 12345678901234567890 - get_mask_account
+masks.py - 2025-10-10 15:43:04,892 - develop_fun.log_fun - INFO - Результат маскировки счета: **7890 - get_mask_account
+masks.py - 2025-10-10 15:43:04,894 - develop_fun.log_fun - INFO - Маскировка карты: 1234567890123456 - get_mask_card_number
+masks.py - 2025-10-10 15:43:04,894 - develop_fun.log_fun - INFO - Результат маскировки карты: 1234 56** **** 3456 - get_mask_card_number
+masks.py - 2025-10-10 15:43:04,896 - develop_fun.log_fun - INFO - Маскировка карты: 123 - get_mask_card_number
+masks.py - 2025-10-10 15:43:04,896 - develop_fun.log_fun - ERROR - Введите номер карты, должно быть 16 цифр - get_mask_card_number
+masks.py - 2025-10-10 15:43:04,898 - develop_fun.log_fun - INFO - Маскировка счета: 1234567890 - get_mask_account
+masks.py - 2025-10-10 15:43:04,898 - develop_fun.log_fun - ERROR - Введите номер счёта, он включает в себя только цифры - get_mask_account
+utils.py - 2025-10-10 15:43:31,268 - develop_fun.log_fun - INFO - Пробуем открыть файл .json и преобразовать в лист словарей  - get_list_financial_transactions
+masks.py - 2025-10-10 15:43:31,271 - develop_fun.log_fun - INFO - Маскировка карты: 7000792289606361 - get_mask_card_number
+masks.py - 2025-10-10 15:43:31,271 - develop_fun.log_fun - INFO - Результат маскировки карты: 7000 79** **** 6361 - get_mask_card_number
+masks.py - 2025-10-10 15:43:31,273 - develop_fun.log_fun - INFO - Маскировка счета: 73654108430135874305 - get_mask_account
+masks.py - 2025-10-10 15:43:31,274 - develop_fun.log_fun - INFO - Результат маскировки счета: **4305 - get_mask_account
+masks.py - 2025-10-10 15:43:31,275 - develop_fun.log_fun - INFO - Маскировка счета: 64686473678894779589 - get_mask_account
+masks.py - 2025-10-10 15:43:31,276 - develop_fun.log_fun - INFO - Результат маскировки счета: **9589 - get_mask_account
+masks.py - 2025-10-10 15:43:31,278 - develop_fun.log_fun - INFO - Маскировка карты: 7158300734726758 - get_mask_card_number
+masks.py - 2025-10-10 15:43:31,278 - develop_fun.log_fun - INFO - Результат маскировки карты: 7158 30** **** 6758 - get_mask_card_number
+masks.py - 2025-10-10 15:43:31,280 - develop_fun.log_fun - INFO - Маскировка карты: 1596837868705199 - get_mask_card_number
+masks.py - 2025-10-10 15:43:31,280 - develop_fun.log_fun - INFO - Результат маскировки карты: 1596 83** **** 5199 - get_mask_card_number
+masks.py - 2025-10-10 15:43:31,282 - develop_fun.log_fun - INFO - Маскировка карты: 1234567812345678 - get_mask_card_number
+masks.py - 2025-10-10 15:43:31,282 - develop_fun.log_fun - INFO - Результат маскировки карты: 1234 56** **** 5678 - get_mask_card_number
+masks.py - 2025-10-10 15:43:31,284 - develop_fun.log_fun - INFO - Маскировка карты: 1234567890123456 - get_mask_card_number
+masks.py - 2025-10-10 15:43:31,284 - develop_fun.log_fun - INFO - Результат маскировки карты: 1234 56** **** 3456 - get_mask_card_number
+masks.py - 2025-10-10 15:43:31,286 - develop_fun.log_fun - INFO - Маскировка счета: 12345678901234567890 - get_mask_account
+masks.py - 2025-10-10 15:43:31,286 - develop_fun.log_fun - INFO - Результат маскировки счета: **7890 - get_mask_account
+masks.py - 2025-10-10 15:43:31,288 - develop_fun.log_fun - INFO - Маскировка карты: 1234567890123456 - get_mask_card_number
+masks.py - 2025-10-10 15:43:31,288 - develop_fun.log_fun - INFO - Результат маскировки карты: 1234 56** **** 3456 - get_mask_card_number
+masks.py - 2025-10-10 15:43:31,290 - develop_fun.log_fun - INFO - Маскировка карты: 123 - get_mask_card_number
+masks.py - 2025-10-10 15:43:31,291 - develop_fun.log_fun - ERROR - Введите номер карты, должно быть 16 цифр - get_mask_card_number
+masks.py - 2025-10-10 15:43:31,292 - develop_fun.log_fun - INFO - Маскировка счета: 1234567890 - get_mask_account
+masks.py - 2025-10-10 15:43:31,293 - develop_fun.log_fun - ERROR - Введите номер счёта, он включает в себя только цифры - get_mask_account
+utils.py - 2025-10-10 15:43:58,748 - develop_fun.log_fun - INFO - Пробуем открыть файл .json и преобразовать в лист словарей  - get_list_financial_transactions
+masks.py - 2025-10-10 15:43:58,751 - develop_fun.log_fun - INFO - Маскировка карты: 7000792289606361 - get_mask_card_number
+masks.py - 2025-10-10 15:43:58,751 - develop_fun.log_fun - INFO - Результат маскировки карты: 7000 79** **** 6361 - get_mask_card_number
+masks.py - 2025-10-10 15:43:58,753 - develop_fun.log_fun - INFO - Маскировка счета: 73654108430135874305 - get_mask_account
+masks.py - 2025-10-10 15:43:58,753 - develop_fun.log_fun - INFO - Результат маскировки счета: **4305 - get_mask_account
+masks.py - 2025-10-10 15:43:58,755 - develop_fun.log_fun - INFO - Маскировка счета: 64686473678894779589 - get_mask_account
+masks.py - 2025-10-10 15:43:58,755 - develop_fun.log_fun - INFO - Результат маскировки счета: **9589 - get_mask_account
+masks.py - 2025-10-10 15:43:58,757 - develop_fun.log_fun - INFO - Маскировка карты: 7158300734726758 - get_mask_card_number
+masks.py - 2025-10-10 15:43:58,757 - develop_fun.log_fun - INFO - Результат маскировки карты: 7158 30** **** 6758 - get_mask_card_number
+masks.py - 2025-10-10 15:43:58,759 - develop_fun.log_fun - INFO - Маскировка карты: 1596837868705199 - get_mask_card_number
+masks.py - 2025-10-10 15:43:58,759 - develop_fun.log_fun - INFO - Результат маскировки карты: 1596 83** **** 5199 - get_mask_card_number
+masks.py - 2025-10-10 15:43:58,761 - develop_fun.log_fun - INFO - Маскировка карты: 1234567812345678 - get_mask_card_number
+masks.py - 2025-10-10 15:43:58,761 - develop_fun.log_fun - INFO - Результат маскировки карты: 1234 56** **** 5678 - get_mask_card_number
+masks.py - 2025-10-10 15:43:58,763 - develop_fun.log_fun - INFO - Маскировка карты: 1234567890123456 - get_mask_card_number
+masks.py - 2025-10-10 15:43:58,763 - develop_fun.log_fun - INFO - Результат маскировки карты: 1234 56** **** 3456 - get_mask_card_number
+masks.py - 2025-10-10 15:43:58,765 - develop_fun.log_fun - INFO - Маскировка счета: 12345678901234567890 - get_mask_account
+masks.py - 2025-10-10 15:43:58,765 - develop_fun.log_fun - INFO - Результат маскировки счета: **7890 - get_mask_account
+masks.py - 2025-10-10 15:43:58,767 - develop_fun.log_fun - INFO - Маскировка карты: 1234567890123456 - get_mask_card_number
+masks.py - 2025-10-10 15:43:58,767 - develop_fun.log_fun - INFO - Результат маскировки карты: 1234 56** **** 3456 - get_mask_card_number
+masks.py - 2025-10-10 15:43:58,769 - develop_fun.log_fun - INFO - Маскировка карты: 123 - get_mask_card_number
+masks.py - 2025-10-10 15:43:58,769 - develop_fun.log_fun - ERROR - Введите номер карты, должно быть 16 цифр - get_mask_card_number
+masks.py - 2025-10-10 15:43:58,771 - develop_fun.log_fun - INFO - Маскировка счета: 1234567890 - get_mask_account
+masks.py - 2025-10-10 15:43:58,771 - develop_fun.log_fun - ERROR - Введите номер счёта, он включает в себя только цифры - get_mask_account
