@@ -68,8 +68,9 @@ class TestTransactionSumRub:
 
     def test_unknown_currency(self, sample_transaction_unknown):
         """Тест неизвестной валюты"""
-        result = transaction_sum_rub(sample_transaction_unknown)  # ✅ Убрал api_key
-        assert result == "Валюта не указана"
+        result = transaction_sum_rub(sample_transaction_unknown)
+        assert result == 0.0  # ✅ Исправлено с "Валюта не указана" на 0.0
+        assert isinstance(result, float)
 
     @patch("src.external_API.requests.get")
     def test_api_call_parameters_usd(

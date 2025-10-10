@@ -2,18 +2,33 @@
 from typing import Iterator
 
 
-def filter_by_currency(transactions: list[dict], currency_name: str) -> Iterator[dict]:
+def filter_by_currency(transactions: list[dict], currency: str) -> Iterator[dict]:
     """
-    Функция возвращает итератор, который поочередно выдает транзакции,
-    где валюта операции соответствует заданной (например, USD).
-    """
-    yield from (
-        transaction
-        for transaction in transactions
-        if transaction.get("operationAmount", {}).get("currency", {}).get("name")
-        == currency_name
-    )
+    Фильтрует транзакции по валюте операции (поддерживает разные структуры данных).
 
+    Args:
+        transactions: Список словарей с транзакциями
+        currency: Название или код валюты для фильтрации
+
+    Returns:
+        Iterator[dict]: Итератор, который поочечередно возвращает транзакции
+                      в указанной валюте
+    """
+    for transaction in transactions:
+        # Стандартная структура (operationAmount -> currency -> name/code)
+        operation_amount = transaction.get("operationAmount", {})
+        currency_info = operation_amount.get("currency", {})
+
+        # Альтернативная структура (прямые поля currency_name/currency_code)
+        currency_name = transaction.get("currency_name")
+        currency_code = transaction.get("currency_code")
+
+        # Проверяем все возможные варианты
+        if (currency_info.get("name") == currency or
+                currency_info.get("code") == currency or
+                currency_name == currency or
+                currency_code == currency):
+            yield transaction
 
 def transaction_descriptions(transcriptions: list[dict]) -> Iterator[str]:
     """

@@ -1,0 +1,18 @@
+main.py - 2025-10-10 14:56:03,844 - develop_fun.log_fun - INFO - Прочитано транзакций: 6705 - main
+main.py - 2025-10-10 14:56:29,139 - develop_fun.log_fun - INFO - Прочитано транзакций: 6705 - main
+main.py - 2025-10-10 14:57:34,425 - develop_fun.log_fun - INFO - Прочитано транзакций: 6705 - main
+main.py - 2025-10-10 14:57:54,362 - develop_fun.log_fun - INFO - Операции отфильтрованы по статусу | pending | - main
+main.py - 2025-10-10 14:58:12,024 - develop_fun.log_fun - INFO - Файл отфильтрован по дате - main
+main.py - 2025-10-10 14:58:12,024 - develop_fun.log_fun - INFO - Отсортировано по убыванию - main
+main.py - 2025-10-10 14:58:17,210 - develop_fun.log_fun - INFO - Выведены только рублёвые транзакции - main
+main.py - 2025-10-10 14:58:45,912 - develop_fun.log_fun - INFO - Фильтрация по категориям: ['перевод'] - main
+main.py - 2025-10-10 14:58:45,912 - develop_fun.log_fun - INFO - Распечатываю итоговый список транзакций... - main
+main.py - 2025-10-10 14:58:45,912 - develop_fun.log_fun - INFO - Не найдено ни одной транзакции, подходящей под ваши условия фильтрации - main
+main.py - 2025-10-10 14:59:43,929 - develop_fun.log_fun - INFO - Прочитано транзакций: 6705 - main
+main.py - 2025-10-10 14:59:50,193 - develop_fun.log_fun - INFO - Операции отфильтрованы по статусу | pending | - main
+main.py - 2025-10-10 14:59:54,128 - develop_fun.log_fun - INFO - Файл отфильтрован по дате - main
+main.py - 2025-10-10 14:59:54,129 - develop_fun.log_fun - INFO - Отсортировано по убыванию - main
+main.py - 2025-10-10 14:59:56,433 - develop_fun.log_fun - INFO - Выведены транзакции для всех валют - main
+main.py - 2025-10-10 15:00:15,871 - develop_fun.log_fun - INFO - Фильтрация по категориям: ['аптеки'] - main
+main.py - 2025-10-10 15:00:15,871 - develop_fun.log_fun - INFO - Распечатываю итоговый список транзакций... - main
+main.py - 2025-10-10 15:00:15,871 - develop_fun.log_fun - INFO - Не найдено ни одной транзакции, подходящей под ваши условия фильтрации - main
