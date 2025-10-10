@@ -64,3 +64,6 @@ coverage_report/
 # Файлы окружения
 .env
 .env.*
+
+#Логи
+log
